@@ -1,14 +1,15 @@
 import React from 'react'
 import { useTelegram } from '../../hooks/useTelegram'
+import './Header.css'
 
 export const Header = () => {
-    const {tg, user, onClose} = useTelegram()
+    const {user, onClose} = useTelegram()
 
   return (
     <div className={'header'}>
         <button onClick={onClose}>Закрыть</button>
         <span className={'username'}>
-            {user?.username}
+          {user?.username} 
         </span>
     </div>
   )
