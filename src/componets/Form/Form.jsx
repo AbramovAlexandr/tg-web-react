@@ -19,9 +19,9 @@ export const Form = () => {
     }, [country, street, subject])
 
     useEffect(()=>{
-        tg.onEvent( 'mainButtonClicked', callback)
+        tg.onEvent( 'mainButtonClicked', onSendData)
         return () => {
-            tg.offEvent( 'mainButtonClicked', callback)
+            tg.offEvent( 'mainButtonClicked', onSendData)
 
         }
     }, [onSendData])
