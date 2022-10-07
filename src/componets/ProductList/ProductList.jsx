@@ -16,7 +16,7 @@ export const ProductList = () => {
   return (
     <div>
         <ProductItem
-            products={item}
+            product={products}
             // onAdd={onAdd}
             className={'item'}
                 />
