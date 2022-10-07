@@ -9,3 +9,11 @@
 .username{
     margin-left: auto;
 }
+
+.btn-header{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: lightblue;
+    border-radius: 15px;
+}
