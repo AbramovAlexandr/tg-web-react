@@ -2,11 +2,11 @@ import React from 'react'
 import { Button } from '../componets/Button/Button'
 import './ProductItem.css'
 
-export const ProductItem = ({product, className, onAdd}) => {
+export const ProductItem = ({product, className}) => {
 
-    onAddHandler = () =>{
-        onAdd(product)
-    }
+    // onAddHandler = () =>{
+    //     onAdd(product)
+    // }
 
   return (
     <div className={'product' + className}>
@@ -18,7 +18,7 @@ export const ProductItem = ({product, className, onAdd}) => {
                 Стоимость: <b>{product.price}</b>
             </span>
         </div>
-        <Button className={add-btn} onClick={onAddHandler} >Добавить в корзину</Button>
+        <Button className={add-btn}>Добавить в корзину</Button>
     </div>
   )
 }
