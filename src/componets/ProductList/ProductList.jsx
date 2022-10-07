@@ -14,12 +14,14 @@ const products = [
 
 export const ProductList = () => {
   return (
-    <div>
-        <ProductItem
-            product={products}
-            // onAdd={onAdd}
-            className={'item'}
+    <div className={'list'}>
+            {products.map(item => (
+                <ProductItem
+                    product={item}
+                    onAdd={onAdd}
+                    className={'item'}
                 />
-    </div>
+            ))}
+        </div>
   )
 }
